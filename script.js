@@ -3,6 +3,7 @@ const profileData = {
     "name": "Johnny Finch",
     "role": "Full Stack Developer",
     "description": "An experienced software engineer with a passion for developing innovative programs that expedite the efficiency and effectiveness of organizational success.",
+    "color":"#121212",
     "skills": [
         "JavaScript",
         "Python",
@@ -50,6 +51,9 @@ maincontent.classList.add('mainContent')
 //==========================
 //         Profile
 //==========================
+const profileCard = document.getElementById('profileCard')
+profileCard.style.backgroundColor = profileData.color
+
 const profileImg = document.getElementById('profileImg')
 profileImg.src = profileData.photo
 
@@ -100,13 +104,22 @@ for (let i = 0; i < profileData.links.length; i++) {
 //==========================
 //         Proyects
 //==========================
-const proyects = document.getElementById('proyects')
+
+// const proyectsCard = document.getElementById('proyectsCard')
+// proyectsCard.style.backgroundColor = profileData.color;
+
+const proyects = document.getElementById('proyectsCard')
 for (let i = 0; i < profileData.projects.length; i++) {
     const proyect = profileData.projects[i];
+
+    const atag = document.createElement('a')
+    atag.href = proyect.url
+    atag.target = '_blank'
 
     const card = document.createElement('div')
     card.classList.add('proyectCard')
     card.title = proyect.description
+    atag.appendChild(card)
 
     const img = document.createElement('img')
     img.src = proyect.photo
@@ -120,7 +133,7 @@ for (let i = 0; i < profileData.projects.length; i++) {
     card.appendChild(img)
     card.appendChild(title)
 
-    proyects.appendChild(card)
+    proyects.appendChild(atag)
 }
 
 const qrCode = document.createElement('img')
