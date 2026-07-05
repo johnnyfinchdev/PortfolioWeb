@@ -63,6 +63,7 @@ const profileData = {
     "qr": "qr.png"
 }
 
+
 const maincontent = document.createElement("div")
 maincontent.classList.add('mainContent')
 
