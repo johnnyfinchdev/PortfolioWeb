@@ -124,7 +124,14 @@
     --color-subtext: #b2bed1;
     --color-textrain: #7d7b9c;
   }
-
+  
+  [data-theme="holadevelopers-dark"] {
+    --color-background: #121212;
+    --color-accent: #FAA275;
+    --color-maintext: #FAF6F5;
+    --color-subtext: #FFFFFF;
+    --color-textrain: #EB8984;
+  }
   *::selection {
     background-color: var(--color-accent);
     color: var(--color-background);

@@ -10,16 +10,17 @@
 
 export const site = {
   url: 'https://example.com',
+  style: 'holadevelopers',
   meta: {
     title: 'Alex Morgan | Full-stack engineer',
     description:
       'Portfolio example: shipping reliable web products with clear architecture, tests, and delivery practices.',
   },
   hero: {
-    name: 'Alex Morgan',
-    role: 'Full-stack engineer',
+    name: 'Johhny Finch',
+    role: 'Full-stack Developer',
     tagline: 'From product intent to production — pragmatic systems, accessible UI, and maintainable code.',
-    contact: 'Open to collaborations and senior IC roles on product-minded teams.',
+    contact: '',
     avatarSrc: '/favicon.svg',
     avatarAlt: 'Alex Morgan',
   },
