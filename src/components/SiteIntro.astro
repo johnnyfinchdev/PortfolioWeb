@@ -13,7 +13,7 @@ const isSidebar = variant === 'sidebar';
 {isSidebar ? (
   <>
     <div class="relative group mb-8 reveal-content flex justify-center" style="animation-delay: 100ms;">
-      <div class="balloon-float w-20 h-20 md:w-24 md:h-24 rounded-full border-2 border-accent overflow-hidden shadow-[0_0_50px_color-mix(in_srgb,var(--color-accent)_33%,transparent)]">
+      <div class="balloon-float w-20 h-20 md:w-70 md:h-70 border border-accent overflow-hidden shadow-[0_0_50px_color-mix(in_srgb,var(--color-accent)_33%,transparent)]">
         <img
           src={site.hero.avatarSrc}
           alt={site.hero.avatarAlt}
@@ -24,7 +24,7 @@ const isSidebar = variant === 'sidebar';
           height="96"
         />
       </div>
-      <div class="balloon-float absolute -z-10 top-0 left-0 h-full w-full rounded-full"></div>
+      <div class="balloon-float absolute -z-10 top-0 left-0 h-full w-full"></div>
     </div>
 
     <div class="flex flex-col items-center text-center">
@@ -43,7 +43,7 @@ const isSidebar = variant === 'sidebar';
 ) : (
   <div class="flex flex-col items-center text-center">
     <div class="relative mb-4">
-      <div class="h-20 w-20 rounded-full border-2 border-accent overflow-hidden shadow-[0_0_40px_color-mix(in_srgb,var(--color-accent)_28%,transparent)]">
+      <div class="h-40 w-40 border border-accent overflow-hidden shadow-[0_0_40px_color-mix(in_srgb,var(--color-accent)_28%,transparent)]">
         <img
           src={site.hero.avatarSrc}
           alt={site.hero.avatarAlt}

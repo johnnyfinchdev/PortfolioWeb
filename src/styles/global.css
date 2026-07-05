@@ -86,7 +86,7 @@
   }
 
   .panel-card {
-    @apply rounded-none bg-(--color-background) p-6 transition duration-200 border border-(--border-color);
+    @apply bg-(--color-background) p-6 transition duration-200 border border-(--border-color);
   }
 }
 
