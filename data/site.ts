@@ -135,11 +135,11 @@ export const site = {
     { date: '2023', project: 'Analytics pipeline', role: 'Data', techStack: 'SQL, dbt, warehouse' },
     { date: '2023', project: 'Mobile web refresh', role: 'Frontend', techStack: 'HTML, CSS, a11y audits' },
   ],
-  contact: {
-    email: 'hello@example.com',
-    github: 'https://github.com/',
-    linkedin: 'https://www.linkedin.com/',
-  },
+  contact: [
+    {link: 'https://github.com/', icon: 'github-logo'},
+    {link: 'https://www.linkedin.com/', icon: 'linkedin-logo'},
+    {link: 'hello@example.com', icon: 'envelope-simple'},
+  ],
 } as const;
 
 export type ProjectArchiveRow = (typeof site.projectArchive)[number];
