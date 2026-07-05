@@ -40,7 +40,25 @@ const profileData = {
             "name": "Project B",
             "description": "A mobile app that helps users monitor their fitness goals and progress.",
             "url": "https://github.com/johndoe/project-b"
-        }
+        },
+        {
+            "photo": "https://picsum.photos/200",
+            "name": "Project C",
+            "description": "A web application that allows users to track their tasks and manage their time effectively.",
+            "url": "https://github.com/johndoe/project-a"
+        },
+        {
+            "photo": "https://picsum.photos/200",
+            "name": "Project C",
+            "description": "A web application that allows users to track their tasks and manage their time effectively.",
+            "url": "https://github.com/johndoe/project-a"
+        },
+        {
+            "photo": "https://picsum.photos/200",
+            "name": "Project C",
+            "description": "A web application that allows users to track their tasks and manage their time effectively.",
+            "url": "https://github.com/johndoe/project-a"
+        },
     ],
     "qr": "qr.png"
 }
@@ -85,9 +103,13 @@ for (let i = 0; i < profileData.links.length; i++) {
     const atag = document.createElement('a')
     atag.href = link.url
     atag.target = '_blank'
+    atag.classList.add('profileLink')
 
     const card = document.createElement('div')
     card.style.backgroundColor = link.color
+    card.style.borderRadius = '10px'
+    card.style.padding = '0.1px'
+    card.style.margin = '10px'
 
     atag.appendChild(card)
     
@@ -105,8 +127,8 @@ for (let i = 0; i < profileData.links.length; i++) {
 //         Proyects
 //==========================
 
-// const proyectsCard = document.getElementById('proyectsCard')
-// proyectsCard.style.backgroundColor = profileData.color;
+const proyectsCard = document.getElementById('proyectsCard')
+proyectsCard.style.backgroundColor = profileData.color;
 
 const proyects = document.getElementById('proyectsCard')
 for (let i = 0; i < profileData.projects.length; i++) {
@@ -136,9 +158,13 @@ for (let i = 0; i < profileData.projects.length; i++) {
     proyects.appendChild(atag)
 }
 
-const qrCode = document.createElement('img')
-qrCode.src = profileData.qr
-qrCode.alt = 'codigo QR del perfil'
-proyects.append(qrCode)
+const downSection = document.getElementById('downSection')
+
+// const qrCode = document.createElement('img')
+// qrCode.classList.add('qrCode')
+// qrCode.src = profileData.qr
+// qrCode.alt = 'codigo QR del perfil'
+// qrCode.style.backgroundColor = profileData.color;
+// downSection.append(qrCode)
 
 
